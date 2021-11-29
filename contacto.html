@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="gl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Luckiest+Guy&family=Montagu+Slab:wght@300&family=Mukta:wght@200&family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header-component></header-component>
+    <main>
+      <h1>Contacta con nós</h1>
+
+      <form>
+        <p>Cubrindo o formulario xa pasas a ser parte da nosa familia</p>
+        <h3>Deixa os teus datos</h3>
+        
+        <ul>
+          <li>
+            <label for="uname">Usuario</label>
+            <input
+              type="text"
+              name="uname"
+              id="uname"
+              required
+              minlength="5"
+              maxlength="20"
+            />
+          </li>
+          <li>
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" required minlength="1" />
+          </li>
+          <li>
+            <label for="phone">Teléfono</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              required
+              minlength="1"
+              maxlength="10"
+            />
+          </li>
+          <li>
+            <label>
+              Data de nacemento
+              <input type="date" name="date" required />
+            </label>
+          </li>
+
+          <li>
+            <label>
+              Foto de perfil
+              <input type="file" name="foto" />
+            </label>
+          </li>
+
+          <li>
+            <label>
+              Deporte realizado anteriormente
+              <input type="range" name="deporte" value="deporte" />
+            </label>
+          </li>
+        
+          
+         
+          <li>
+            <label for="comment">A túa opinión</label>
+            <textarea
+              name="comment"
+              id="comment"
+              required
+              minlength="1"
+              maxlength="200"
+            >
+            </textarea>
+          </li>
+          <li>
+            <button class="button">Envía</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+    <footer-component></footer-component>
+    <script src="./js/header.js" type="text/javascript" defer></script>
+    <script src="./js/footer.js" type="text/javascript" defer></script>
+  </body>
+</html>
